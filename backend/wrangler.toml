@@ -1,0 +1,19 @@
+name = "helpdesk-api"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "helpdesk-db"
+database_id = "REPLACE_WITH_D1_ID"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "helpdesk-files"
+
+[vars]
+JWT_ISSUER = "helpdesk-internal"
+
+[[unsafe.bindings]]
+name = "WEB_PUSH"
+type = "secret_text"
